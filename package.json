@@ -1,0 +1,24 @@
+{
+  "name": "advancedFlowControlWithQ",
+  "description": "Using Q and promises to do some really useful stuff",
+  "version": "0.0.1",
+  "author": {
+    "name": "Kevin Hodges",
+    "email": "kev_hodges_1@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kevinhodges/advancedFlowControlWithQ.git"
+  },
+  "license": "MIT",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "q": "^1.0.1"
+  }
+}
