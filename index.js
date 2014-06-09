@@ -36,7 +36,7 @@ var runAllTheseStagesInSeries = function( requestData, stages, callback ) {
 		} );
 		promises.push( currentPromise );
 	} );
-	// group the results and then call the callback with the .result entry on the scope variable
+	// group the results and then call the callback with the scope variable
 	Q.allSettled( promises ).then( function() {
 		callback( null, scope );
 	} );
@@ -67,6 +67,20 @@ var myTasks = {
 
 runAllTheseStagesInSeries( requestData, myTasks, function( error, result ) {
 
-	console.log( 'result', result );
+	// result...
+	// { requestData: 
+	// 	{ 
+	// 		firstname: 'Bilbo',
+	// 		surname: 'Baggins',
+	// 		from: 'The Shire',
+	// 		age: 45
+	// 	},
+	// 	fullname: {
+	// 		fullname: 'Bilbo Baggins'
+	// 	},
+	// 	ageInTenYears: {
+	// 		ageInTenYears: 55
+	// 	}
+	// }
 	
 } );
