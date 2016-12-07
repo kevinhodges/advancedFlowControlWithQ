@@ -6,10 +6,10 @@ schema: "hotel" or "room"
 | alternateChipsHotelCodes.condition | string | lengthEven | When the alternate hotel logic should be applied | false |
 | alternateChipsHotelCodes.code | string | ALTSSI | Another hotel code | false |
 | alternateIds | array |  |  |  |
-| disallowedAgentCodes | array |  |  |  |
-| disallowedTicketBuckets | array |  |  |  |
-| disallowedTicketCodes | array |  |  |  |
-| displayName | string | Best Hotel |  | false |
+| disallowedAgentCodes | array | ["LGD01", "CHE01"] | Prevents this hotel returning for these agent codes | false |
+| disallowedTicketBuckets | array | ["ABC", "DEF"] | Prevents this hotel returning for these ticket buckets | false |
+| disallowedTicketCodes | array | ["123", "456"] | Prevents this hotel returning for these ticket codes |  |
+| displayName | string | Best Hotel |  | true |
 | hotel | string | RESALT | If it's a "room" schema we need to link it to a "hotel" resource | false |
 | interconnectingRoomsThatCannotBeSoldWithThisRoom | array |  |  | false |
 | isCotConfirmationRequired | boolean | true | If true, will inform the consumer that they should confirm with the hotel that a cot is available before creating the order | |
