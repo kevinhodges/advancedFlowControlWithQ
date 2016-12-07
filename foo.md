@@ -5,7 +5,7 @@ schema: "hotel" or "room"
 | alternateChipsHotelCodes.key | string |  | The schema to apply this logic to | false |
 | alternateChipsHotelCodes.condition | string | lengthEven | When the alternate hotel logic should be applied | false |
 | alternateChipsHotelCodes.code | string | ALTSSI | Another hotel code | false |
-| alternateIds | array |  |  |  |
+| alternateIds | array |  | No idea | false |
 | disallowedAgentCodes | array | ["LGD01", "CHE01"] | Prevents this hotel returning for these agent codes | false |
 | disallowedTicketBuckets | array | ["ABC", "DEF"] | Prevents this hotel returning for these ticket buckets | false |
 | disallowedTicketCodes | array | ["123", "456"] | Prevents this hotel returning for these ticket codes |  |
@@ -20,6 +20,6 @@ schema: "hotel" or "room"
 | occupancyLimits.children.maximum | numeric | 3 | Maximum number of children allowed in this room | false |
 | occupancyLimits.cots.maximum | numeric | 1 | Maximum number of cots allowed in this room | true |
 | occupancyLimits.totalOccupants.maximum | numeric | 1 | Describe how many people fit into this room | true |
-| operaCode | string | ATH-MOO4 | Concatenation of the Opera propery code and room code | false |
+| operaCode | string | ATH-MOO4 | Concatenation of the Opera property code and room code | false |
 | roomsThatCannotBeSoldWithThisRoom | array |  |  | false |
 |  |  |  |  |  |
