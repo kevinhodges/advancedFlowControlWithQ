@@ -5,7 +5,7 @@ schema: "hotel" or "room"
 | alternateChipsHotelCodes.key | string |  | The schema to apply this logic to | false |
 | alternateChipsHotelCodes.condition | string | lengthEven | When the alternate hotel logic should be applied | false |
 | alternateChipsHotelCodes.code | string | ALTSSI | Another hotel code | false |
-| alternateIds | array |  | No idea | false |
+| alternateIds | array |  | Used in the "isResortHotel" design document, not sure what it's achieveing, we have "isResort" property on hotels and rooms | false |
 | disallowedAgentCodes | array | ["LGD01", "CHE01"] | Prevents this hotel returning for these agent codes | false |
 | disallowedTicketBuckets | array | ["ABC", "DEF"] | Prevents this hotel returning for these ticket buckets | false |
 | disallowedTicketCodes | array | ["123", "456"] | Prevents this hotel returning for these ticket codes |  |
